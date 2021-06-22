@@ -243,7 +243,7 @@ index.ios.js
 
 # Typescript
 # ignore the .ts files
-*.ts
-*.tsx
+# *.ts
+# *.tsx
 # include the .d.ts files
 !*.d.ts 

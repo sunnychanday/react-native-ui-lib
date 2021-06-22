@@ -29,7 +29,7 @@
     "build:dev": "tsc --p tsconfig.dev.json",
     "build:exports": "./node_modules/.bin/babel src --out-dir src --config-file ./src/.babelrc.json --extensions '.ts,.tsx' --ignore 'src/index.ts'",
     "build:packages": "node scripts/buildPackages.js",
-    "build": "tsc --p tsconfig.build.json && npm run build:exports && npm run build:packages",
+    "build": "npm run build:packages",
     "prepush": "npm run build:dev && npm run test",
     "log": "react-native log-ios | grep 'ethan -'",
     "docs:install": "(cd ./uilib-docs && rm -rf node_modules && rm -rf package-lock.json && npm install)",
